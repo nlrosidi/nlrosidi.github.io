@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Nathanael Rosidi">
+    <meta name="author" content="Nathanael Rosidi">
+    <link rel="icon" href="../../favicon.ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <title>Nathanael Rosidi</title>
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+
+    <style>
+	.container-fluid {padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;padding-bottom:50px}
+	.top-buffer { margin-top:20px;}
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Nathanael Rosidi</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+	    <li><a href="#project">Current Project</a></li>
+            <li><a href="#pastproject">Past Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="starter-template">
+
+        <h1 id="aboutme">About Me.</h1>
+        <p class="lead">Just a few things I've done and a few things I'm doing</p>
+	  <div class="container-fluid">
+        		<div class="col-md-6">
+            			<img src="assets/nlrosidi.jpg" alt="Nathanael Rosidi" class="img-responsive">
+              		</div>
+          		<div class="col-md-6 top-buffer">
+                <p>In product and growth analytics, I am most often interested in how people engage with products and their marketing campaigns. I'm particularly interested in understanding signals and predictors that drive product engagement which can then be used to inform product decisions and better understand the user. I use a variety of analytical techniques like machine learning, computational models, and statistical analyses (most
+                of which I'm classically trained in, but for the most part I like exploring and learning new techniques)</p>
+
+                 <p>I am also an adjunct professor in Business Analytics and Information Systems in the School of Management at the University of San Francisco. I teach
+                 both undergraduates and MBAs analytical techniques to better facilitate data-driven decisions -- hopefully applying these techniques in industry.</p>
+
+       			</div>
+	  </div>
+
+	<div class="container-fluid">
+          <h1 id="project">Current Projects.</h1>
+          <p>Most of my work these days involve using analytical techniques to drive product insights and facilitate product and growth decisions. Much of the work is also designing and implementing a scalable analytical infrastructure to automate and more efficiently service various teams. Here's a sampling of my extracurricular projects.</p>
+
+          <p class="lead">Import CSVs to Database Tool</p>
+          <li>A python tool that leverages Pandas to programmatically import CSV files to a Postgres database. This tool will convert all columns to lower case without spaces and autodetect datatypes<a target="_blank" href="https://github.com/nlrosidi/csv_to_db"> Link to GitHub.</a></li> 
+          
+		  <p></p>
+		  
+          <p class="lead">An API Manager to manage all your APIs, written in Flask</p>
+          <li>This app is an API that manages all your other APIs. The purpose is to easily and securely store all your API credentials (keys and curl path) so that users need not worry about all the different connections and keys needed to access different APIs.<a target="_blank" href="https://github.com/nlrosidi/api_flask_app"> Link to GitHub.</a></li>  
+
+          <p></p>
+
+          <p class="lead">Machine learning with Random Forest and Cross Validation</p>
+          <li><a target="_blank" href="subpages/randomforest_crossvalidation.html">An introduction to machine learning using a random forest classifier and cross 
+          validation function. This project can also be repurposed using almost any
+          machine learning algorithm in sklearn.</a><a target="_blank" href="https://github.com/nlrosidi/randomforest_crossvalidation"> Link to GitHub.</a></li>  
+
+          <p></p>
+
+          <p class="lead">Logistic regression on email type to login</p>
+          <li><a target="_blank" href="subpages/logit_emails_to_logins.html">Performing a logistic regression to show the effectiveness of email types to user login, using python and statsmodels to run the regression.</a><a target="_blank" href="https://github.com/nlrosidi/logit_email_types"> Link to GitHub.</a></li>  
+        </div>
+
+      <div class="container-fluid">
+         <h1 id="pastproject">Past Projects.</h1>
+           <p class="lead">Some Past Data Analyses and Visualizations</p>
+            <p>My past work involves computational and statistical modeling on biological and healthcare data. I've implemented a variety of different types of models such as signal processing, cross-correlation algorithms, monte-carlo simulations/cross-validations, k-means clustering, and a bunch of parametric and non-parametric statistical models.</p>
+
+        		<div class="col-md-6">
+            			<img src="assets/plosone_2011.png" alt="Rosidi Plos One 2011" class="img-responsive">
+            			<p><strong>Rosidi NL, PLOS ONE 2011.</strong> Spatial and temporal characteristics of the brain's inflammatory response after an injury.</p>
+          		</div>
+          		<div class="col-md-6">
+          			<img src="assets/jcbfm_2010.png" alt="Rosidi Journal of Cerebral Blood Flow & Metabolism 2010" class="img-responsive">
+          			<p><strong>Rosidi NL, JCBFM 2010.</strong> K-means cluster analysis of blood flow speed based on branch topology.</p>
+       			</div> 
+       </div>
+       <div class="container-fluid">
+
+	    <p class="lead">Dissertation</p>
+	  	
+	    	   <li>Nathanael L. Rosidi, <a target="_blank" href="http://gradworks.umi.com/34/85/3485169.html">"Studies of pathological dynamics after microvascular injury using nonlinear optical methods"</a>. 2011. <a target="_blank" href="https://www.dropbox.com/s/1izbhc59hjdubci/NathanaelRosidi_Dissertation.pdf?dl=0"> Download it here.</a></li>	
+
+
+	   <p class="lead top-buffer top-buffer">Peer-Reviewed Publications</p>
+             <ul>
+	       <li>C. Foerch, <strong>N.L. Rosidi</strong>, F. Schlunk, A. Lauer, F.A. Cianchetti, E. Mandeville, K. Arai, K. Yigitkanli, X. Fan, X. Wang, K. van Leyen, H. Steinmetz, C.B. Schaffer, E.H. Lo, <a target="_blank" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0054203">“Intravenous tPA therapy does not worsen acute intracerebral hemorrhage in mice,” PLoS ONE (2013) 8 (2): e54203</a></li>
+  	       <li>V.N. Ngassam, M.C. Howland, A. Sapuri-Butti, <strong>N.L. Rosidi</strong>, A.N. Parikh, <a target="_blank" href="http://pubs.rsc.org/en/content/articlelanding/sm/2012/c2sm00025c#!divAbstract">“A Comparison of Detergent Action on Supported Lipid Monolayers and Bilayers,” Soft Matter (2012) 8, 3734-3738, DOI: 10.1039/C2SM00025C</a></li>
+               <li><strong>N.L. Rosidi</strong>, J. Zhou, S. Pattanaik, P. Wang, W. Jin, &nbsp;M. Brophy, N. Nishimura, W.L. Olbricht, C.B. Schaffer, <a target="_blank" href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026612">“Cortical microhemorrhages cause local inflammation but do not trigger widespread dendrite degeneration,” PLoS ONE (2011) 6 (10): e26612</a></li>
+               <li>N. Nishimura*, <strong>N.L. Rosidi*</strong>, C. Iadecola and C.B. Schaffer, <a target="_blank" href="http://www.ncbi.nlm.nih.gov/pubmed/20842163">“Limitations of collateral flow after occlusion of a single cortical penetrating arteriole,” Journal of Cerebral Blood Flow &amp; Metabolism (2010) 30, 1914–1927. </a>*authors contributed equally</li>
+	    </ul>
+
+   </div>
+	<div class="container-fluid">
+           <h1 id="contact">Contact.</h1>
+           <p class="lead"><small>nathanrosidi [a] gmail [.] com</small></p>
+	</div>
+
+
+      </div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
