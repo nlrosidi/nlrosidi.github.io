@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+body {
+  background: #eeeeee;
+}
+
 header {
   background: #000000;
 }
