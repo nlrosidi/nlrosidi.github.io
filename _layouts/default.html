@@ -1,546 +1,66 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1561.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #22863a; -webkit-text-stroke: #22863a}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; line-height: 20.0px; font: 12.0px Consolas; color: #1b1f23; color: rgba(27, 31, 35, 0.3); -webkit-text-stroke: rgba(27, 31, 35, 0.3); min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #032f62; -webkit-text-stroke: #032f62}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #24292e; -webkit-text-stroke: #24292e}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #24292e; -webkit-text-stroke: #24292e; min-height: 14.0px}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #6a737d; -webkit-text-stroke: #6a737d}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 20.0px; font: 12.0px Consolas; color: #005cc5; -webkit-text-stroke: #005cc5}
-    span.s1 {font-kerning: none; color: #24292e; -webkit-text-stroke: 0px #24292e}
-    span.s2 {font-kerning: none}
-    span.s3 {font-kerning: none; color: #6f42c1; -webkit-text-stroke: 0px #6f42c1}
-    span.s4 {font-kerning: none; color: #22863a; -webkit-text-stroke: 0px #22863a}
-    span.s5 {font-kerning: none; color: #fafbfc; background-color: #b31d28; -webkit-text-stroke: 0px #fafbfc}
-    span.s6 {font-kerning: none; color: #032f62; -webkit-text-stroke: 0px #032f62}
-    span.s7 {font-kerning: none; color: #005cc5; -webkit-text-stroke: 0px #005cc5}
-    span.s8 {font-kerning: none; color: #d73a49; -webkit-text-stroke: 0px #d73a49}
-    table.t1 {background-color: #ffffff; border-collapse: collapse}
-    td.td1 {width: 119.0px; padding: 0.0px 10.0px 0.0px 10.0px}
-    td.td2 {width: 119.0px; min-width: 50.0px; padding: 0.0px 10.0px 0.0px 10.0px}
-    td.td3 {width: 1267.0px; padding: 0.0px 10.0px 0.0px 10.0px}
-  </style>
-</head>
-<body>
-<table cellspacing="0" cellpadding="0" class="t1">
-  <tbody>
-    <tr>
-      <td valign="top" class="td1">
-        <p class="p1"><span class="s1">&lt;!</span><span class="s2">doctype</span><span class="s1"> </span><span class="s3">html</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1">&lt;</span><span class="s4">html</span><span class="s1"> </span><span class="s3">lang</span><span class="s1">=</span><span class="s2">"{{ site.lang | default: "</span><span class="s3">en-US</span><span class="s5">"</span><span class="s1"> </span><span class="s3">}}</span><span class="s5">"</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">  </span>&lt;</span><span class="s4">head</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">meta</span><span class="s2"> </span><span class="s3">charset</span><span class="s2">=</span><span class="s6">"utf-8"</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">meta</span><span class="s1"> </span><span class="s3">http-equiv</span><span class="s1">=</span><span class="s2">"X-UA-Compatible"</span><span class="s1"> </span><span class="s3">content</span><span class="s1">=</span><span class="s2">"IE=edge"</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2">{% seo %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">link</span><span class="s1"> </span><span class="s3">rel</span><span class="s1">=</span><span class="s2">"stylesheet"</span><span class="s1"> </span><span class="s3">href</span><span class="s1">=</span><span class="s2">"{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">script</span><span class="s1"> </span><span class="s3">src</span><span class="s1">=</span><span class="s2">"https://code.jquery.com/jquery-3.3.0.min.js"</span><span class="s1"> </span><span class="s3">integrity</span><span class="s1">=</span><span class="s2">"sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4="</span><span class="s1"> </span><span class="s3">crossorigin</span><span class="s1">=</span><span class="s2">"anonymous"</span><span class="s1">&gt;&lt;/</span><span class="s4">script</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">script</span><span class="s1"> </span><span class="s3">src</span><span class="s1">=</span><span class="s2">"{{ '/assets/js/main.js' | relative_url }}"</span><span class="s1">&gt;&lt;/</span><span class="s4">script</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s2">&lt;!--[if lt IE 9]&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p6"><span class="s2"><span class="Apple-converted-space">      </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"&gt;&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p6"><span class="s2"><span class="Apple-converted-space">    </span>&lt;![endif]--&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">meta</span><span class="s1"> </span><span class="s3">name</span><span class="s1">=</span><span class="s2">"viewport"</span><span class="s1"> </span><span class="s3">content</span><span class="s1">=</span><span class="s2">"width=device-width, initial-scale=1, user-scalable=no"</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/</span><span class="s4">head</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">  </span>&lt;</span><span class="s4">body</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;</span><span class="s4">header</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">h1</span><span class="s2">&gt;{{ site.title | default: site.github.repository_name }}&lt;/</span><span class="s4">h1</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">p</span><span class="s2">&gt;{{ site.description | default: site.github.project_tagline }}&lt;/</span><span class="s4">p</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;/</span><span class="s4">header</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;</span><span class="s4">div</span><span class="s2"> </span><span class="s3">id</span><span class="s2">=</span><span class="s6">"banner"</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">span</span><span class="s2"> </span><span class="s3">id</span><span class="s2">=</span><span class="s6">"logo"</span><span class="s2">&gt;&lt;/</span><span class="s4">span</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">a</span><span class="s1"> </span><span class="s3">href</span><span class="s1">=</span><span class="s2">"{{ site.github.repository_url }}"</span><span class="s1"> </span><span class="s3">class</span><span class="s1">=</span><span class="s2">"button fork"</span><span class="s1">&gt;&lt;</span><span class="s4">strong</span><span class="s1">&gt;View On GitHub&lt;/</span><span class="s4">strong</span><span class="s1">&gt;&lt;/</span><span class="s4">a</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>{% if site.show_downloads %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">          </span>&lt;</span><span class="s4">div</span><span class="s2"> </span><span class="s3">class</span><span class="s2">=</span><span class="s6">"downloads"</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">            </span>&lt;</span><span class="s4">span</span><span class="s2">&gt;Downloads:&lt;/</span><span class="s4">span</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">            </span>&lt;</span><span class="s4">ul</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">              </span>&lt;</span><span class="s4">li</span><span class="s1">&gt;&lt;</span><span class="s4">a</span><span class="s1"> </span><span class="s3">href</span><span class="s1">=</span><span class="s2">"{{ site.github.zip_url }}"</span><span class="s1"> </span><span class="s3">class</span><span class="s1">=</span><span class="s2">"button"</span><span class="s1">&gt;ZIP&lt;/</span><span class="s4">a</span><span class="s1">&gt;&lt;/</span><span class="s4">li</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">              </span>&lt;</span><span class="s4">li</span><span class="s1">&gt;&lt;</span><span class="s4">a</span><span class="s1"> </span><span class="s3">href</span><span class="s1">=</span><span class="s2">"{{ site.github.tar_url }}"</span><span class="s1"> </span><span class="s3">class</span><span class="s1">=</span><span class="s2">"button"</span><span class="s1">&gt;TAR&lt;/</span><span class="s4">a</span><span class="s1">&gt;&lt;/</span><span class="s4">li</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">            </span>&lt;/</span><span class="s4">ul</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">          </span>&lt;/</span><span class="s4">div</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>{% endif %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p6"><span class="s1"><span class="Apple-converted-space">      </span>&lt;/</span><span class="s4">div</span><span class="s1">&gt;</span><span class="s2">&lt;!-- end banner --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">    </span>&lt;</span><span class="s4">div</span><span class="s1"> </span><span class="s3">class</span><span class="s1">=</span><span class="s2">"wrapper"</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;</span><span class="s4">nav</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">ul</span><span class="s2">&gt;&lt;/</span><span class="s4">ul</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;/</span><span class="s4">nav</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;</span><span class="s4">section</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>{{ content }}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;/</span><span class="s4">section</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;</span><span class="s4">footer</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>{% if site.github.is_project_page %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">          </span>&lt;</span><span class="s4">p</span><span class="s2">&gt;Project maintained by &lt;</span><span class="s4">a</span><span class="s2"> </span><span class="s3">href</span><span class="s2">=</span><span class="s6">"{{ site.github.owner_url }}"</span><span class="s2">&gt;{{ site.github.owner_name }}&lt;/</span><span class="s4">a</span><span class="s2">&gt;&lt;/</span><span class="s4">p</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>{% endif %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>&lt;</span><span class="s4">p</span><span class="s2">&gt;&lt;</span><span class="s4">small</span><span class="s2">&gt;Hosted on GitHub Pages </span><span class="s7">&amp;mdash;</span><span class="s2"> Theme by &lt;</span><span class="s4">a</span><span class="s2"> </span><span class="s3">href</span><span class="s2">=</span><span class="s6">"https://twitter.com/michigangraham"</span><span class="s2">&gt;mattgraham&lt;/</span><span class="s4">a</span><span class="s2">&gt;&lt;/</span><span class="s4">small</span><span class="s2">&gt;&lt;/</span><span class="s4">p</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;/</span><span class="s4">footer</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">    </span>&lt;/</span><span class="s4">div</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td3">
-        <p class="p5"><span class="s2"></span><br></p>
-        <p class="p5"><span class="s2"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">    </span>{% if site.google_analytics %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;</span><span class="s4">script</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>(</span><span class="s8">function</span><span class="s2">(i,s,o,g,r,a,m){i[</span><span class="s6">'GoogleAnalyticsObject'</span><span class="s2">]</span><span class="s8">=</span><span class="s2">r;i[r]</span><span class="s8">=</span><span class="s2">i[r]</span><span class="s8">||function</span><span class="s2">(){</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">        </span>(i[r].q</span><span class="s8">=</span><span class="s2">i[r].q</span><span class="s8">||</span><span class="s2">[]).</span><span class="s7">push</span><span class="s2">(</span><span class="s7">arguments</span><span class="s2">)},i[r].l</span><span class="s8">=</span><span class="s7">1</span><span class="s8">*new</span><span class="s2"> </span><span class="s3">Date</span><span class="s2">();a</span><span class="s8">=</span><span class="s2">s.</span><span class="s7">createElement</span><span class="s2">(o),</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p7"><span class="s1"><span class="Apple-converted-space">        </span>m</span><span class="s8">=</span><span class="s1">s.</span><span class="s2">getElementsByTagName</span><span class="s1">(o)[</span><span class="s2">0</span><span class="s1">];a.async</span><span class="s8">=</span><span class="s2">1</span><span class="s1">;a.src</span><span class="s8">=</span><span class="s1">g;m.</span><span class="s2">parentNode</span><span class="s1">.</span><span class="s2">insertBefore</span><span class="s1">(a,m)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span>})(</span><span class="s7">window</span><span class="s1">,</span><span class="s7">document</span><span class="s1">,</span><span class="s2">'script'</span><span class="s1">,</span><span class="s2">'//www.google-analytics.com/analytics.js'</span><span class="s1">,</span><span class="s2">'ga'</span><span class="s1">);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">ga</span><span class="s1">(</span><span class="s2">'create'</span><span class="s1">, </span><span class="s2">'{{ site.google_analytics }}'</span><span class="s1">, </span><span class="s2">'auto'</span><span class="s1">);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p3"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">ga</span><span class="s1">(</span><span class="s2">'send'</span><span class="s1">, </span><span class="s2">'pageview'</span><span class="s1">);</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">      </span>&lt;/</span><span class="s4">script</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">    </span>{% endif %}</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p4"><span class="s2"><span class="Apple-converted-space">  </span>&lt;/</span><span class="s4">body</span><span class="s2">&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top" class="td2">
-        <p class="p2"><span class="s2"></span><br></p>
-      </td>
-      <td valign="top" class="td3">
-        <p class="p1"><span class="s1">&lt;/</span><span class="s2">html</span><span class="s1">&gt;</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</body>
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="https://code.jquery.com/jquery-3.3.0.min.js" integrity="sha256-RTQy8VOmNlT6b2PIRur37p6JEBZUE7o8wPgMvu18MC4=" crossorigin="anonymous"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% if site.show_downloads %}
+          <div class="downloads">
+            <span>Downloads:</span>
+            <ul>
+              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
+              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
+            </ul>
+          </div>
+        {% endif %}
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
 </html>
