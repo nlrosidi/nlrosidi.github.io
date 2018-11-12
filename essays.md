@@ -1,4 +1,8 @@
-### 2018-11-01: Do it without a data scientist
+## 2018-11-01: Do it without a data scientist
+
+Adapted article was originally published in the 2018 October issue of [Analytics Magazine.](https://www.google.com/url?q=http://analytics-magazine.org/analyze-this-who-needs-a-data-scientist/?campaign_name%3Dthird-party-newsflo-newsflo%26dgcid%3Draven_md_feed_email&source=gmail&ust=1542072796707000&usg=AFQjCNET_eWsuXQL6yDIeKEnApjvFBGTuQ)
+
+#### My original, extended version
 
 Over the past few years, data science has emerged as a requirement for companies to leverage powerful mathematical techniques to inform the business and help drive better decision making. Many companies like Amazon and Airbnb have integrated data science into their products, giving them a competitive advantage in a crowded marketplace. There has been so much success that now every department, across all industries, leverages data science to help make decisions. These software come with tag lines like “Get recommendations pulled from your CRM data” and “Understand your data without a data scientist”. While these products do enhance the way business traditionally operates, they are off-the-shelf, black box solutions that are made to fit all departments across all industries. The old saying “If you try to please everyone, you’ll end up pleasing no one” comes to mind.
 
