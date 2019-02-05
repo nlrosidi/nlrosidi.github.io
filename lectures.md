@@ -1,4 +1,4 @@
-# Lectures and Problem Sets for Business Analytics
+# Analytics Lectures and Problem Sets
 
 I originally wrote these lectures and created these problem sets for my students at USF. These are open-source and free to use and have since been adapted by various other professors, universities, and educational platforms. Most of the lectures and problem sets are housed on Strata Scratch since the data and tools need to be hosted somehwere (I've indicated the ones that are free to try, however, ping me if you'd like to access material behind their paywall) . Several other problem sets are hosted on Google CoLab and are free to use.
 
